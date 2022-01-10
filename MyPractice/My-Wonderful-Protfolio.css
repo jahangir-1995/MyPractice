@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color:rgb(34, 37, 12);
+    background-color: #e4e2e2;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav-item{
+    display: flex;
+}
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 25px;
+    list-style-type: none;
+}
+/* About sections start */
+.about-content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: green solid 2px;
+}
+.about-content p{
+    padding: 20px;
+    line-height: 2;
+}
+.img-aria{ 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.half-width{
+    width: 50%;
+}
+.half-width img{
+    width: 65%;
+}
+.border{
+    border: red 2px solid;
+}
+
+/* About sections end */
+
+/* Animation sections Start */
+
+.animation-part{
+    display: flex;
+}
+.bat-animation{
+    width: 50%;
+}
+.bat-animation{
+    width: 50%;
+}
+.animation-text{
+    flex: 1;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.bat{
+    transition: transform 0.2s ease-in; 
+}
+.flild:hover .bat{
+    transition: transform 2s;
+}
+
+.bat{
+    transform: rotate(-25deg);
+    transform-origin: top right;
+}
+.ball{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    left: 165px;
+    bottom: 110px;
+    transition: transform 1s ease-out 0.25s;
+}
+.filed:hover .ball{
+    transform: translate(420px, -190px);
+}
+.box-animate{
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    margin: 10px;
+    border-radius: 20px;
+    transition: width 3s linear, height 3s ease, transform 3s;
+}
+.box-animate:hover{
+    width: 120px;
+    height: 120px;
+    transform: rotate(180deg);
+    box-sizing: border-box;
+    background-color: red;
+}
+
+/* Form and Table aria Start */
+.fexible{
+    flex: 1;
+    display: flex;
+    /* justify-content: center; */
+}
+table{
+    margin-left: 0;
+}
+.table-style, .form-style{
+    width: 50%;
+}
+.form-style{
+    margin-left: 90px;
+}
+
+th, td{
+    border: 2px indianred solid;
+    
+}
+/* Form and Table aria end */
+
+
+/* Video part Start */
+video{
+    height: 350px;
+    width: 400px;
+}
+.audio-item{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.video-item{
+    flex: 1;
+    display: flex;
+}
+/* Video part End */
