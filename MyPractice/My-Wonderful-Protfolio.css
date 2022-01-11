@@ -40,10 +40,10 @@ body{
     justify-content: center;
     align-items: center;
 }
-.half-width{
+.about-half-width{
     width: 50%;
 }
-.half-width img{
+.about-half-width img{
     width: 65%;
 }
 .border{
@@ -56,45 +56,47 @@ body{
 
 .animation-part{
     display: flex;
-}
-.bat-animation{
-    width: 50%;
-}
-.bat-animation{
-    width: 50%;
-}
-.animation-text{
-    flex: 1;
-    /* display: flex; */
     justify-content: center;
-    align-items: center;
-    padding: 20px;
 }
-
+.flild{
+    width: 50%;
+}
 .bat{
     transition: transform 0.2s ease-in; 
 }
-.flild:hover .bat{
-    transition: transform 2s;
-}
-
-.bat{
+.bat-flild:hover .bat{
     transform: rotate(-25deg);
     transform-origin: top right;
 }
+.bat-flild:hover .ball{
+    transform: translate(390px, -190px);
+}
+
 .ball{
     background-color: red;
     width: 50px;
     height: 50px;
     border-radius: 25px;
     position: relative;
-    left: 165px;
+    left: 163px;
     bottom: 110px;
     transition: transform 1s ease-out 0.25s;
 }
-.filed:hover .ball{
-    transform: translate(420px, -190px);
+#bat-description{
+    border: chartreuse;
+    margin-left: 30px;
+    padding-left: 10px;
 }
+/* Box aria Start */
+.box-aria{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
 .box-animate{
     height: 100px;
     width: 100px;
@@ -103,6 +105,14 @@ body{
     border-radius: 20px;
     transition: width 3s linear, height 3s ease, transform 3s;
 }
+.box-animation-text{
+    flex: 1;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
 .box-animate:hover{
     width: 120px;
     height: 120px;
@@ -110,15 +120,18 @@ body{
     box-sizing: border-box;
     background-color: red;
 }
+/* Box aria End */
+
 
 /* Form and Table aria Start */
-.fexible{
+.fexible-table{
     flex: 1;
     display: flex;
     /* justify-content: center; */
 }
 table{
     margin-left: 0;
+    border-collapse: collapse;
 }
 .table-style, .form-style{
     width: 50%;
@@ -129,25 +142,37 @@ table{
 
 th, td{
     border: 2px indianred solid;
+    padding: 10px;
     
 }
+
 /* Form and Table aria end */
 
 
-/* Video part Start */
-video{
-    height: 350px;
-    width: 400px;
+/* Video and Audio part Start */
+audio{
+    margin-right: 40px;
 }
 .audio-item{
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 80px;
     padding: 20px;
+}
+video{
+    height: 350px;
+    width: 400px;
+    margin-left: 30px;
+}
+.video-text{
+    margin-top: 20px;
 }
 .video-item{
     flex: 1;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-/* Video part End */
+/* Video and Audio part End */
